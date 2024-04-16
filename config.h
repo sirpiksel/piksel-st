@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "MesloLGS NF:style=Regular:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -91,37 +91,37 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 2;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#000000",
+	"#ff3a33",
+	"#77ff33",
+	"#ffda33",
+	"#3370ff",
+	"#ad33ff",
+	"#33ffbb",
+	"#ffffff",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#1a1a1a",
+	"#e6605c",
+	"#8ae65c",
+	"#e6cc5c",
+	"#5c86e6",
+	"#ae5ce6",
+	"#5ce6b8",
+	"#e6e6e6",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	"#ffffff", /* default foreground colour */
+	"#101214", /* default background colour */
 };
 
 
@@ -141,7 +141,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
